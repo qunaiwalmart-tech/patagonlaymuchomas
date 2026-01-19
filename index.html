@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Paisajes de Argentina | Turismo Natural</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Descubre los paisajes más increíbles de Argentina: montañas, glaciares, cataratas, desiertos y llanuras.">
+    <meta name="keywords" content="paisajes de Argentina, turismo argentino, Patagonia, Cataratas del Iguazú, Andes, naturaleza">
+    <meta name="author" content="Paisajes Argentinos">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: background-image 1.5s ease-in-out;
+        }
+
+        header {
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffd700;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            background: rgba(0,0,0,0.65);
+            margin: 30px;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #ffd700;
+        }
+
+        .comentario {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .estrellas {
+            color: gold;
+            font-size: 20px;
+        }
+
+        .anuncio {
+            background: #222;
+            border: 2px dashed #ffd700;
+            text-align: center;
+            padding: 20px;
+            margin: 20px 0;
+            color: #ffd700;
+        }
+
+        footer {
+            background: rgba(0,0,0,0.8);
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Paisajes de Argentina</h1>
+    <p>Un viaje visual por la naturaleza más impactante del país</p>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#quienes">Quiénes Somos</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#contacto">Contáctanos</a>
+        <a href="#ubicacion">Ubícanos</a>
+    </nav>
+</header>
+
+<section id="inicio">
+    <h2>Inicio</h2>
+    <p>
+        Argentina es un país de contrastes únicos: desde los glaciares milenarios de la Patagonia,
+        pasando por las imponentes Cataratas del Iguazú, hasta los colores infinitos del norte
+        y las vastas llanuras pampeanas. Este sitio nace para mostrar, inspirar y promover
+        la belleza natural argentina a través de imágenes, relatos y experiencias reales.
+    </p>
+</section>
+
+<div class="anuncio">
+    ESPACIO PUBLICITARIO – Anuncia aquí tu emprendimiento turístico
+</div>
+
+<section id="quienes">
+    <h2>Quiénes Somos</h2>
+    <p>
+        Somos un equipo de viajeros, fotógrafos y amantes de la naturaleza que recorremos
+        Argentina documentando sus paisajes más emblemáticos y también aquellos rincones
+        menos conocidos. Nuestro objetivo es compartir contenido auténtico, educativo
+        y visualmente impactante para promover el turismo responsable.
+    </p>
+</section>
+
+<section id="objetivos">
+    <h2>Objetivos</h2>
+    <ul>
+        <li>Promover el turismo sustentable en Argentina</li>
+        <li>Difundir paisajes naturales y culturales</li>
+        <li>Inspirar a viajeros nacionales e internacionales</li>
+        <li>Apoyar economías regionales</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Comentarios de Visitantes</h2>
+
+    <div class="comentario">
+        <p><strong>María González</strong></p>
+        <p>Una experiencia visual increíble, me dieron ganas de recorrer todo el país.</p>
+        <div class="estrellas">★★★★★</div>
+    </div>
+
+    <div class="comentario">
+        <p><strong>Juan Pérez</strong></p>
+        <p>Excelente contenido y fotografías. Muy recomendable.</p>
+        <div class="estrellas">★★★★☆</div>
+    </div>
+
+    <div class="comentario">
+        <p><strong>Lucía Fernández</strong></p>
+        <p>Hermosa forma de mostrar la diversidad natural de Argentina.</p>
+        <div class="estrellas">★★★★★</div>
+    </div>
+</section>
+
+<div class="anuncio">
+    PUBLICIDAD – Tours, hoteles y excursiones
+</div>
+
+<section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Email: contacto@paisajesargentinos.com</p>
+    <p>Teléfono: +54 11 1234 5678</p>
+</section>
+
+<section id="ubicacion">
+    <h2>Ubícanos</h2>
+    <p>
+        Nuestra base se encuentra en Buenos Aires, Argentina, desde donde
+        planificamos recorridos por todo el territorio nacional.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Paisajes de Argentina – Todos los derechos reservados</p>
+</footer>
+
+<script>
+    const fondos = [
+        "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+        "https://images.unsplash.com/photo-1549880338-65ddcdfd017b",
+        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+        "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"
+    ];
+
+    let indice = 0;
+
+    function cambiarFondo() {
+        document.body.style.backgroundImage = `url(${fondos[indice]})`;
+        indice = (indice + 1) % fondos.length;
+    }
+
+    cambiarFondo();
+    setInterval(cambiarFondo, 6000);
+</script>
+
+</body>
+</html>
